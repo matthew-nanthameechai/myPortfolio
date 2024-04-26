@@ -1,11 +1,19 @@
-<div
-  class="bg-image"
-  style="
-    background-image: url('https://bepatrickdavid.com/images/herobg-md.webp');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  "
->
-  <app-nav></app-nav>
+<app-nav></app-nav>
+<div>
+  <div
+    class="bg-image"
+    style="
+      background-image: url('https://bepatrickdavid.com/images/herobg-md.webp');
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <app-home id="home"></app-home>
+  </div>
+  <div class="bg-image">
+    <app-about id="about"></app-about>
+    <app-projects id="projects"></app-projects>
+    <app-contact id="contact"></app-contact>
+  </div>
 </div>
