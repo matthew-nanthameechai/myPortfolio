@@ -1,3 +1,11 @@
 .about-container {
   height: 100vh;
 }
+
+.about-skills-container {
+  width: 33rem;
+}
+
+.about-main-container {
+  width: 39rem;
+}
