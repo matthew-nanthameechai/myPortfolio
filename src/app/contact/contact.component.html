@@ -13,40 +13,47 @@
   </div>
 
   <div class="contact-form-contatiner d-flex flex-column align-items-center">
-    <div class="form-conatiner">
-      <div class="mb-1">Name</div>
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="floatingInput"
-          placeholder="John Doe"
-        />
-        <label for="floatingInput">Name</label>
+    <form class="contact-form" (submit)="sendEmail($event)">
+      <div class="form-conatiner">
+        <div class="mb-1">Name</div>
+        <div class="form-floating mb-3">
+          <input
+            name="from_name"
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="John Doe"
+          />
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="mb-1">Email</div>
+        <div class="form-floating mb-3">
+          <input
+            name="from_email"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="mb-1">Message</div>
+        <div class="form-floating">
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea1"
+            style="height: 150px"
+          ></textarea>
+          <label for="floatingTextarea1">Message</label>
+        </div>
+        <div class="col-auto mt-3">
+          <button type="submit" class="btn btn-primary" value="Send">
+            Submit
+          </button>
+        </div>
       </div>
-      <div class="mb-1">Email</div>
-      <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label for="floatingInput">Email address</label>
-      </div>
-      <div class="mb-1">Message</div>
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea1"
-          style="height: 150px"
-        ></textarea>
-        <label for="floatingTextarea1">Message</label>
-      </div>
-      <div class="col-auto mt-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
