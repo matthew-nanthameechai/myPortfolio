@@ -1,10 +1,12 @@
 .project-container {
-  height: 100vh;
   padding-left: 10rem;
 }
 
 .project-header {
   padding-top: 5rem;
+}
+.recruiter-img {
+  height: 100%;
 }
 
 img {
@@ -14,4 +16,27 @@ img {
 
 .col {
   margin-bottom: 2rem;
+}
+
+a {
+  padding: 0;
+  margin: 0 1rem;
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: white;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
