@@ -31,3 +31,9 @@ h2 {
 h3 {
   font-size: 18px;
 }
+
+@media only screen and (max-width: 768px) {
+  .head {
+    width: 0%;
+  }
+}
